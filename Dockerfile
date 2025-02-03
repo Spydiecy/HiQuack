@@ -75,4 +75,4 @@ COPY --from=builder /app/scripts ./scripts
 EXPOSE 3000 5173
 
 # Command to start the application
-CMD ["sh", "-c", "pnpm start --characters='./agent/quack.character.json' & pnpm start:client"]
+CMD ["sh", "-c", "pnpm start & pnpm start:client"]
